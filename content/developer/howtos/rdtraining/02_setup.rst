@@ -248,10 +248,22 @@ Here are some useful Git commands for your day-to-day work.
   .. code-block:: console
 
      $ cd $HOME/src/odoo
+<<<<<<< HEAD
      $ git switch master
+||||||| parent of c090ba57 (temp)
+     $ git switch saas-15.3
+=======
+     $ git switch {BRANCH}
+>>>>>>> c090ba57 (temp)
 
      $ cd $HOME/src/enterprise
+<<<<<<< HEAD
      $ git switch master
+||||||| parent of c090ba57 (temp)
+     $ git switch saas-15.3
+=======
+     $ git switch {BRANCH}
+>>>>>>> c090ba57 (temp)
 
 - Fetch and rebase:
 
@@ -259,11 +271,23 @@ Here are some useful Git commands for your day-to-day work.
 
      $ cd $HOME/src/odoo
      $ git fetch --all --prune
+<<<<<<< HEAD
      $ git rebase --autostash odoo/master
+||||||| parent of c090ba57 (temp)
+     $ git rebase --autostash odoo/saas-15.3
+=======
+     $ git rebase --autostash odoo/{BRANCH}
+>>>>>>> c090ba57 (temp)
 
      $ cd $HOME/src/enterprise
      $ git fetch --all --prune
+<<<<<<< HEAD
      $ git rebase --autostash enterprise/master
+||||||| parent of c090ba57 (temp)
+     $ git rebase --autostash enterprise/saas-15.3
+=======
+     $ git rebase --autostash enterprise/{BRANCH}
+>>>>>>> c090ba57 (temp)
 
 Code Editor
 -----------

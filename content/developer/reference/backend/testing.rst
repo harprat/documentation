@@ -598,8 +598,16 @@ Javascript
 #. Add any step you want.
 
 Every step contains at least a trigger. You can either use the `predefined steps
+<<<<<<< HEAD
 <https://github.com/odoo/odoo/blob/16.0/addons/web_tour/static/src/js/tour_step_utils.js>`_ or write
 your own personalized step.
+||||||| parent of c090ba57 (temp)
+<https://github.com/odoo/odoo/blob/saas-15.3/addons/web_tour/static/src/js/tour_step_utils.js>`_ or write
+your own personalized step.
+=======
+<{GITHUB_PATH}/addons/web_tour/static/src/js/tour_step_utils.js>`_ or write your own personalized
+step.
+>>>>>>> c090ba57 (temp)
 
 Here are some example of steps:
 

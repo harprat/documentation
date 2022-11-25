@@ -150,9 +150,19 @@ Repository
 
       .. code-block:: console
 
+<<<<<<< HEAD
           $ wget -q -O - https://nightly.odoo.com/odoo.key | sudo gpg --dearmor -o /usr/share/keyrings/odoo-archive-keyring.gpg
           $ echo 'deb [signed-by=/usr/share/keyrings/odoo-archive-keyring.gpg] https://nightly.odoo.com/16.0/nightly/deb/ ./' | sudo tee /etc/apt/sources.list.d/odoo.list
           $ sudo apt-get update && sudo apt-get install odoo
+||||||| parent of c090ba57 (temp)
+          # wget -O - https://nightly.odoo.com/odoo.key | apt-key add -
+          # echo "deb http://nightly.odoo.com/15.0/nightly/deb/ ./" >> /etc/apt/sources.list.d/odoo.list
+          # apt-get update && apt-get install odoo
+=======
+          # wget -O - https://nightly.odoo.com/odoo.key | apt-key add -
+          # echo "deb http://nightly.odoo.com/{CURRENT_MAJOR_BRANCH}/nightly/deb/ ./" >> /etc/apt/sources.list.d/odoo.list
+          # apt-get update && apt-get install odoo
+>>>>>>> c090ba57 (temp)
 
       You can then use the usual `apt-get upgrade` command to keep your installation up-to-date.
 
@@ -163,7 +173,13 @@ Repository
 
       .. code-block:: console
 
+<<<<<<< HEAD
          $ sudo dnf config-manager --add-repo=https://nightly.odoo.com/16.0/nightly/rpm/odoo.repo
+||||||| parent of c090ba57 (temp)
+         $ sudo dnf config-manager --add-repo=https://nightly.odoo.com/15.0/nightly/rpm/odoo.repo
+=======
+         $ sudo dnf config-manager --add-repo=https://nightly.odoo.com/{CURRENT_MAJOR_BRANCH}/nightly/rpm/odoo.repo
+>>>>>>> c090ba57 (temp)
          $ sudo dnf install -y odoo
          $ sudo systemctl enable odoo
          $ sudo systemctl start odoo
@@ -183,8 +199,16 @@ Distribution package
       <download_>`_.
 
       .. note::
+<<<<<<< HEAD
          Odoo 16.0 'deb' package currently supports `Debian 11 (Bullseye)`_, `Ubuntu 22.04 (Jammy)`_
          or above.
+||||||| parent of c090ba57 (temp)
+         Odoo 15.0 'deb' package currently supports `Debian 11 (Bullseye)`_, `Ubuntu 20.04 (Focal)`_
+         or above.
+=======
+         Odoo {CURRENT_MAJOR_VERSION} 'deb' package currently supports `Debian 11 (Bullseye)`_,
+         `Ubuntu 20.04 (Focal)`_ or above.
+>>>>>>> c090ba57 (temp)
 
       Next, execute the following commands **as root**:
 
@@ -224,13 +248,25 @@ Distribution package
       <download_>`_.
 
       .. note::
+<<<<<<< HEAD
          Odoo 16.0 'rpm' package supports Fedora 36.
+||||||| parent of c090ba57 (temp)
+         Odoo 15.0 'rpm' package supports Fedora 34.
+=======
+         Odoo {CURRENT_MAJOR_VERSION} 'rpm' package supports Fedora 34.
+>>>>>>> c090ba57 (temp)
 
       Once downloaded, the package can be installed using the 'dnf' package manager:
 
       .. code-block:: console
 
+<<<<<<< HEAD
          $ sudo dnf localinstall odoo_16.0.latest.noarch.rpm
+||||||| parent of c090ba57 (temp)
+         $ sudo dnf localinstall odoo_15.0.latest.noarch.rpm
+=======
+         $ sudo dnf localinstall odoo_{CURRENT_MAJOR_BRANCH}.latest.noarch.rpm
+>>>>>>> c090ba57 (temp)
          $ sudo systemctl enable odoo
          $ sudo systemctl start odoo
 
