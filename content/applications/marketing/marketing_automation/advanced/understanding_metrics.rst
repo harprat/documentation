@@ -1,6 +1,7 @@
 =====================
 Understanding Metrics
 =====================
+
 Metrics are values that help you measure progress and can be a powerful way of linking your
 employees to goals.
 

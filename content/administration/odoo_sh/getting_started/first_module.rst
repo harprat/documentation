@@ -1,7 +1,7 @@
 
-==================================
+=================
 Your first module
-==================================
+=================
 
 Overview
 ========
@@ -27,7 +27,7 @@ Create the development branch
 =============================
 
 From Odoo.sh
--------------
+------------
 
 In the branches view:
 
@@ -56,7 +56,6 @@ to the code of your development branch.
 From your computer
 ------------------
 
-
 Clone your Github repository on your computer:
 
 .. code-block:: bash
@@ -71,7 +70,6 @@ Create a new branch:
 .. code-block:: bash
 
   $ git checkout -b feature-1 master
-
 
 Create the module structure
 ===========================
@@ -220,7 +218,6 @@ If your Odoo.sh project is configured to install your module automatically,
 you will directly see it amongst the database apps. Otherwise, it will be available in the apps to install.
 
 You can then play around with your module, create new records and test your features and buttons.
-
 
 Test with the production data
 =============================
