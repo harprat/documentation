@@ -16,6 +16,8 @@ HEADINGS_ORDERING_GUIDELINES = [
     '=', '-', '~', '*', '^',
 ]
 
+# TODO do not lint orphan files ?
+
 @checker(".rst")
 def check_headers(file, lines, options=None):
     """Enforce our headings guidelines
