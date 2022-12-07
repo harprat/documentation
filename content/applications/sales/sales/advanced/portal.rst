@@ -24,9 +24,6 @@ From the main menu, select **Contacts** menu. If the contact is not
 yet created in the system, click on the create button to create
 new contact. Enter details of the contact and click "save".
 
-.. image:: portal/portal01.png
-    :align: center
-
 .. image:: portal/portal02.png
     :align: center
 
